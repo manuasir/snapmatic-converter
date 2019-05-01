@@ -1,0 +1,11 @@
+language: node_js
+os:
+  - 'windows'
+  - 'linux'
+  - 'darwin'
+node_js:
+  - 'stable'
+  - '9.0.0'
+  - '8.0.0'
+  - '7.0.0'
+  - '6.0.0'
