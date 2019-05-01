@@ -1,0 +1,11 @@
+# Wazuh App Copyright (C) 2019 Wazuh Inc. (License GPLv2)
+version: '2'
+
+services:
+  snapmatic-converter:
+    build: .
+    hostname: snapmatic
+    volumes:
+      - ./test/src:/src/
+      - ./dst:/dst/
+
