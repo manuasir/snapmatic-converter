@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const snapmaticToJpeg = require('../lib/snapmatic-to-jpeg');
 const { debug } = require('../package.json');
 // start process if correct number of arguments was passed
