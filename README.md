@@ -23,12 +23,20 @@ npm install snapmatic-converter
 $ snapmatic-converter <source-dir> <destination-dir>
 ```
 
-Also you can use as an exportable module:
+Also you can use as an usual module:
 
 ```
 const Converter = require('snapmatic-converter')
 const snapToJpg = new Converter('srcdir','dstdir')
-snapToJpg.process()
+snapToJpg.convertAllFiles()
+snapToJpg.processSingleFile('PGTA51876361281')
+snapToJpg.convertSomeFiles(['PGTA52078400596','PGTA51370982198','PGTA5916100621'])
+```
+
+A binary file of the file is already compiled for Linux x86_64 operating systems.
+
+```
+$ ./bin/snapmatic-converter-linux <source-dir> <destination-dir>
 ```
 
 ### Tests
