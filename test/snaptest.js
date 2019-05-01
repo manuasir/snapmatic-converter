@@ -3,6 +3,7 @@ const assert = require('assert');
 const expect = chai.expect;
 const snapmaticToJpeg = require('../lib/snapmatic-to-jpeg');
 chai.should();
+
 describe('Snapmatic tests using ASSERT interface from CHAI module: ', () => {
   describe('Check addTested Function: ', () => {
     describe('Load', () => {
@@ -19,14 +20,20 @@ describe('Snapmatic tests using ASSERT interface from CHAI module: ', () => {
     //-------------------------------------//
     describe('Getters', () => {
       it('Get source path.', () => {
-        const temp = new snapmaticToJpeg('src', 'dst');
+        const temp = new snapmaticToJpeg(
+          `${__dirname}/src/`,
+          `${__dirname}/dst/`
+        );
         expect(temp.srcPath.should.be.a('string'));
-        expect(temp.srcPath.should.equal('src'));
+        expect(temp.srcPath.should.equal(`${__dirname}/src/`));
       });
       it('Get destination path.', () => {
-        const temp = new snapmaticToJpeg('src', 'dst');
+        const temp = new snapmaticToJpeg(
+          `${__dirname}/src/`,
+          `${__dirname}/dst/`
+        );
         expect(temp.dstPath.should.be.a('string'));
-        expect(temp.dstPath.should.equal('dst'));
+        expect(temp.dstPath.should.equal(`${__dirname}/dst/`));
       });
       it('Get default source path.', () => {
         const temp = new snapmaticToJpeg();
@@ -43,7 +50,41 @@ describe('Snapmatic tests using ASSERT interface from CHAI module: ', () => {
     describe('Create', () => {
       it('Create new directory that does not exist.', () => {
         const temp = new snapmaticToJpeg();
-        temp.createDstDir('/tmp/test');
+        expect(
+          temp.createDstDir.bind(temp.createDstDir, '/tmp/test')
+        ).to.not.throw(Error);
+      });
+    });
+    //-------------------------------------//
+    describe('Convert', () => {
+      it('Convert all files in directory.', () => {
+        const temp = new snapmaticToJpeg(
+          `${__dirname}/src/`,
+          `${__dirname}/dst/`
+        );
+        expect(() => temp.convertAllFiles()).to.not.throw(Error);
+      });
+      it('Convert one file in directory.', () => {
+        const temp = new snapmaticToJpeg(
+          `${__dirname}/src/`,
+          `${__dirname}/dst/`
+        );
+        expect(() => temp.convertSingleFile('PGTA5702817641')).to.not.throw(
+          Error
+        );
+      });
+      it('Convert a set of files in directory.', () => {
+        const temp = new snapmaticToJpeg(
+          `${__dirname}/src/`,
+          `${__dirname}/dst/`
+        );
+        expect(() =>
+          temp.convertSomeFiles([
+            'PGTA5702817641',
+            'PGTA51370982198',
+            'PGTA5304958339'
+          ])
+        ).to.not.throw(Error);
       });
     });
   });
