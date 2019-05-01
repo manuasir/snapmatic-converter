@@ -33,7 +33,7 @@ snapToJpg.processSingleFile('PGTA51876361281')
 snapToJpg.convertSomeFiles(['PGTA52078400596','PGTA51370982198','PGTA5916100621'])
 ```
 
-A binary file of the file is already compiled for Linux x86_64 operating systems.
+A binary file of the file is already compiled for Linux x86_64, MacOS and Windows operating systems.
 
 ```
 $ ./bin/snapmatic-converter-linux <source-dir> <destination-dir>
