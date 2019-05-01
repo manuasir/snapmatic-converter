@@ -1,0 +1,34 @@
+{
+  "name": "snapmatic-converter",
+  "version": "1.0.0",
+  "description": "GTA Snapmatic to JPEG converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuasir/snapmatic-converter.git"
+  },
+  "keywords": [
+    "gta",
+    "jpeg",
+    "snapmatic",
+    "file",
+    "converter",
+    "node",
+    "javascript",
+    "js",
+    "nodejs"
+  ],
+  "author": "manuasir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manuasir/snapmatic-converter/issues"
+  },
+  "homepage": "https://github.com/manuasir/snapmatic-converter#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
