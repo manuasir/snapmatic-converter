@@ -3,7 +3,7 @@
 
 ### Description
 
-It will scan for Snapmatic images in the source directory, and then it will convert them into JPEG format and will locate them into the destination source.
+Scan for Snapmatic images in a source directory, convert them into JPEG format and place them into the destination source.
 
 ### Installation
 
