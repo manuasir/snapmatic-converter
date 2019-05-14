@@ -1,5 +1,5 @@
 ## GTA Snapmatic image converter to JPEG
-![](https://travis-ci.org/manuasir/snapmatic-converter.svg?branch=master)
+[![Build Status](https://travis-ci.org/manuasir/snapmatic-converter.svg?branch=master)](https://travis-ci.org/manuasir/snapmatic-converter)
 
 ### Description
 
