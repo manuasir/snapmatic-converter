@@ -1,6 +1,6 @@
 {
   "name": "snapmatic-converter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "GTA Snapmatic to JPEG converter",
   "main": "index.js",
   "scripts": {
