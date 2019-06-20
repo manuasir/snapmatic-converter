@@ -1,9 +1,9 @@
 ## GTA Snapmatic image converter to JPEG
-![](https://travis-ci.org/manuasir/snapmatic-converter.svg?branch=master)
+[![Build Status](https://travis-ci.org/manuasir/snapmatic-converter.svg?branch=master)](https://travis-ci.org/manuasir/snapmatic-converter)
 
 ### Description
 
-It will scan for Snapmatic images in the source directory, and then it will convert them into JPEG format and will locate them into the destination source.
+Scan for Snapmatic images in a source directory, convert them into JPEG format and place them into the destination source.
 
 ### Installation
 
