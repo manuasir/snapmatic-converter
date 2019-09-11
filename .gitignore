@@ -61,3 +61,8 @@ typings/
 .next
 
 package-lock.json
+
+*.jpg
+bin/*linux
+bin/*macos
+bin/*win.exe

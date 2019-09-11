@@ -6,10 +6,10 @@
   "scripts": {
     "pretty": "prettier --single-quote \"{,!(node_modules)/**/}*.js\" --write",
     "lint": "eslint . --ext .js -c .eslintrc.json --color",
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha test/* && istanbul check-coverage"
+    "test": "istanbul cover _mocha test/* && istanbul check-coverage"
   },
   "bin": {
-    "snapmatic-converter": "./bin/snapmatic-converter.js"
+    "snapmatic-converter": "./bin/run.js"
   },
   "repository": {
     "type": "git",
