@@ -62,7 +62,11 @@ typings/
 
 package-lock.json
 
+# Ignore all generated images
 *.jpg
-bin/*linux
-bin/*macos
-bin/*win.exe
+
+# Ignore binary files
+bin
+
+# Ignore dist folder
+dist
