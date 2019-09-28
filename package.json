@@ -4,12 +4,15 @@
   "description": "GTA Snapmatic to JPEG converter",
   "main": "index.js",
   "scripts": {
-    "pretty": "prettier --single-quote \"{,!(node_modules)/**/}*.js\" --write",
-    "lint": "eslint . --ext .js -c .eslintrc.json --color",
-    "test": "istanbul cover _mocha test/* && istanbul check-coverage"
+    "build": "tsc",
+    "test": "npm run build && mkdir -p dist/test/src && cp src/test/src/PGTA* dist/test/src && jest dist/test/*",
+    "prepublish": "npm run build && rm -rf dist/test"
   },
+  "files": [
+    "dist/"
+  ],
   "bin": {
-    "snapmatic-converter": "./bin/run.js"
+    "snapmatic-converter": "./dist/bin/run.js"
   },
   "repository": {
     "type": "git",
@@ -33,12 +36,15 @@
   },
   "homepage": "https://github.com/manuasir/snapmatic-converter#readme",
   "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.8",
     "chai": "^4.2.0",
     "eslint": "^5.10.0",
     "eslint-plugin-async-await": "^0.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^7.0.1",
     "istanbul": "^0.4.5",
+    "jest": "^24.9.0",
     "mocha": "^6.1.4",
     "prettier": "^1.14.2"
   }
