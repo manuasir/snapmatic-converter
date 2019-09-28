@@ -37,14 +37,6 @@
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.8",
-    "chai": "^4.2.0",
-    "eslint": "^5.10.0",
-    "eslint-plugin-async-await": "^0.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "istanbul": "^0.4.5",
-    "jest": "^24.9.0",
-    "mocha": "^6.1.4",
-    "prettier": "^1.14.2"
+    "jest": "^24.9.0"
   }
 }
