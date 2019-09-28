@@ -41,6 +41,7 @@ snapToJpg.convertSomeFiles(['PGTA52078400596','PGTA51370982198','PGTA5916100621'
 If you're using this software from NPM, it's already tested. You can pass the tests with `mocha`:
 
 ```sh
+$ sudo npm install -g typescript@latest
 $ npm install
 $ npm test
 ```
@@ -63,6 +64,8 @@ Find more information about this on the [LICENSE](LICENSE) file.
 # Upload to NPM
 
 ```sh
+$ sudo npm install -g typescript@latest
+$ npm install
 $ npm publish
 ```
 
