@@ -1,7 +1,7 @@
 import { SnapConverter } from '../lib';
 const src = `${__dirname}/src/`;
 const dst = `${__dirname}/dst/`;
-console.log(src);
+
 describe('Snapmatic', () => {
   describe('Check addTested Function: ', () => {
     describe('Load', () => {
